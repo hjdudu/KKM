@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/px_72">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/btn_pingjia"
+        android:layout_width="@dimen/px_230"
+        android:layout_height="@dimen/px_86"
+
+        android:textColor="#FF999999"
+        android:background="@drawable/btn_line_background"
+        android:text="满意"
+        android:textSize="@dimen/px_32" />
+</android.support.constraint.ConstraintLayout>

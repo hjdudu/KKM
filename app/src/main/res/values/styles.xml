@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00ffffff</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--<style name="myDialogTheme" parent="android:Theme.Dialog">-->
+        <!--<item name="android:windowFrame">@null</item>-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:windowIsTranslucent">false</item>-->
+        <!--<item name="android:windowNoTitle">true</item>&lt;!&ndash;除去title&ndash;&gt;-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+        <!--<item name="android:windowBackground">@null</item>&lt;!&ndash;除去背景色&ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="ImageTranslucentTheme" parent="AppTheme">
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="CommonLine">
+        <item name="android:background">@color/common_line_color</item>
+    </style>
+
+    <style name="CommonLine.Horizontal" parent="@style/CommonLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="CommonSectionRowView">
+        <item name="android:paddingLeft">@dimen/px_35</item>
+        <item name="android:paddingRight">@dimen/px_37</item>
+        <item name="android:paddingTop">@dimen/px_40</item>
+        <item name="android:paddingBottom">@dimen/px_40</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">48dip</item>
+        <item name="maxWidth">48dip</item>
+        <item name="minHeight">48dip</item>
+        <item name="maxHeight">48dip</item>
+        <item name="indicatorColor">@color/loading_color</item>
+        <item name="indicatorName">BallSpinFadeLoaderIndicator</item>
+    </style>
+
+    <style name="loading_dialog_n" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="colorAccent">@color/c_1199FF</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="SearchXEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_edit_text_height</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/search_edit_text_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">#999999</item>
+        <item name="android:maxLines">1</item>
+        <item name="x_clearDrawable">@mipmap/icon_clear_text</item>
+    </style>
+
+
+    <!--RatingBar颜色-->
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#FFFFFFFF</item>
+        <item name="colorControlActivated">#FFF9BC1A</item>
+    </style>
+
+
+    <style name="AnimationLeftFade">
+        <item name="android:windowEnterAnimation">@anim/in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/out_righttoleft</item>
+    </style>
+
+    <style name="AnimationRightFade">
+        <item name="android:windowEnterAnimation">@anim/in_righttoleft</item>
+        <item name="android:windowExitAnimation">@anim/out_lefttoright</item>
+    </style>
+
+    <style name="AnimationBottomFade">
+        <item name="android:windowEnterAnimation">@anim/in_bottomtotop</item>
+        <item name="android:windowExitAnimation">@anim/out_toptobottom</item>
+    </style>
+
+    <style name="time_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+
+    <style name="AppTheme_sp" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@mipmap/buyer_guide_4</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="common_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="Theme.Splash" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/splash_bg</item>
+    </style>
+</resources>

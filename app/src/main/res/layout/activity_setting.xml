@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_36">
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtSafely"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:iconDrawable="@mipmap/user_shezhi_anquan_ic"
+            app:titleTxt="@string/setting_page_safely_setting"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <!--<com.kekemei.kekemei.view.SectionRowView-->
+        <!--android:id="@+id/txtFeedBack"-->
+        <!--style="@style/CommonSectionRowView"-->
+        <!--app:contentTxtColor="@color/common_text_grey"-->
+        <!--app:hideRightArrow="true"-->
+        <!--app:iconDrawable="@mipmap/user_shezhi_fankui_ic"-->
+        <!--app:titleTxt="@string/setting_page_user_feed_back"-->
+        <!--app:titleTxtSize="@dimen/px_40" />-->
+
+        <!--<View style="@style/CommonLine.Horizontal" />-->
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtHelpCenter"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:iconDrawable="@mipmap/user_shezhi_bangzhu_ic"
+            app:titleTxt="@string/setting_page_help_center"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtAboutUs"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:iconDrawable="@mipmap/user_shezhi_kekemei_ic"
+            app:titleTxt="@string/setting_page_about_us"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtCleanMemory"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:iconDrawable="@mipmap/user_shezhi_huancun_ic"
+            app:titleTxt="@string/setting_page_clean_memory"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtVersion"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:iconDrawable="@mipmap/user_shezhi_benben_ic"
+            app:titleTxt="@string/setting_page_version"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_quit_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_130"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/px_37"
+        android:layout_marginTop="@dimen/px_46"
+        android:layout_marginRight="@dimen/px_37"
+        android:layout_marginBottom="@dimen/help_center_page_custom_service_bottom_margin"
+        android:background="#FF7AD2D2"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_50" />
+</LinearLayout>

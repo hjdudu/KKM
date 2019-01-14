@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_background">#e5e6e8</color>
+    <color name="common_line_color">#ededed</color>
+    <color name="common_text_dark">#333333</color>
+    <color name="common_text_grey">#585858</color>
+    <color name="common_tx2">#848484</color>
+    <color name="common_tx3">#999999</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="comui_tab_text_color">#ff333333</color>
+
+    <color name="toolbar_background">#7AD2D2</color>
+
+    <color name="c_1199FF">#1199ff</color>
+    <color name="loading_color">#808692</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="work_page_bg">#f4f5f9</color>
+    <color name="work_common_line">#e5e6e8</color>
+    <color name="work_30_line">#f4f5f9</color>
+    <color name="work_loading_bg">#22000000</color>
+    <color name="work_tab_bg_line">#d5d6d8</color>
+    <color name="work_content_bg">#f4f5f7</color>
+    <color name="work_item_title_icon">#55AAFF</color>
+    <color name="work_item_title_tv">#262626</color>
+    <color name="work_item_title_right_tv">#808692</color>
+    <color name="work_newspeper_title_tv">#5e5e5e</color>
+    <color name="work_newspeper_orange_tv">#ff4400</color>
+    <color name="work_newspeper_item_tip_tv">#8a9099</color>
+    <color name="work_tab_tv">#8a9099</color>
+    <color name="work_tab_tv_selected">#1199ff</color>
+    <color name="work_line_chart_line">#1199ff</color>
+    <color name="work_line_chart_fill">#e5f6ff</color>
+    <color name="work_line_x_line">#acb2bf</color>
+    <color name="work_ana_top_tv">#5d6065</color>
+    <color name="work_chart_line_mark_bg">#55aaff</color>
+    <color name="work_order_title_text">#333333</color>
+    <color name="work_order_blue_text">#1199ff</color>
+    <color name="work_order_gray_text">#666666</color>
+    <color name="work_order_gray_low_text">#999999</color>
+    <color name="work_order_price_red_text">#f02b2b</color>
+    <color name="work_order_goods_item_bg">#f9f9f9</color>
+    <color name="work_deliver_good_item_bg">#f7f7f7</color>
+
+
+    <color name="black">#000</color>
+    <color name="c_5e">#5e5e5e</color>
+    <color name="c_333">#333</color>
+    <color name="c_999">#999</color>
+    <color name="c_aaa">#AAA</color>
+    <color name="c_bbb">#BBB</color>
+    <color name="c_ccc">#CCC</color>
+    <color name="c_ddd">#DDD</color>
+    <color name="c_eee">#EEE</color>
+    <color name="c_F1F1F1">#F1F1F1</color>
+    <color name="c_F2F2F2">#F2F2F2</color>
+
+    <color name="my_status">#1199FF</color>
+    <color name="work_status">#333333</color>
+    <color name="main_tab_text_normal">#8A9099</color>
+    <color name="main_tab_text_selector">#1199FF</color>
+
+    <color name="my_username">#262626</color>
+    <color name="my_shop">#5D6065</color>
+    <color name="my_item_account">#29CCCC</color>
+    <color name="my_item_customer">#00AAFF</color>
+    <color name="my_item_msg">#5588EE</color>
+    <color name="my_item_printer">#00AAFF</color>
+    <color name="my_item_version">#29CCCC</color>
+    <color name="my_item_help">#FF7733</color>
+
+    <color name="msg_title">#262626</color>
+    <color name="msg_item_msg">#8a9099</color>
+    <color name="msg_backgroud">#f4f5f9</color>
+    <color name="msg_sys_icon_backgroud">#00bb88</color>
+    <color name="msg_common_line">#e5e6e8</color>
+    <color name="msg_time">#b0b0b0</color>
+
+    <color name="forg_back">#81838e</color>
+    <color name="forg_fir_phone_text">#333333</color>
+    <color name="forg_fir_split">#d3d6de</color>
+    <color name="forg_bt_bg_able">#1199ff</color>
+    <color name="forg_bt_bg_enable">#331199ff</color>
+    <color name="forg_sec_input_code">#333333</color>
+    <color name="forg_sec_phone">#1199ff</color>
+    <color name="forg_sec_send_code">#999999</color>
+    <color name="forg_thi">#81838e</color>
+    <color name="forg_thi_set_psw">#333333</color>
+    <color name="forg_thi_set_psw_description">#666666</color>
+    <color name="forg_thi_psw">#333333</color>
+    <color name="forg_thi_split">#e5e6e8</color>
+    <color name="forg_thi_psw_hint">#999999</color>
+    <color name="forg_thi_psw_description">#1199ff</color>
+
+
+
+    <color name="account_common_line">#e5e6e8</color>
+    <color name="account_item_textColor">#333333</color>
+    <color name="account_security_prompt_textColor">#999999</color>
+
+    <color name="employee_background">#f4f5f9</color>
+
+    <color name="service_cancel_text_color">#81838E</color>
+    <color name="trade_info_color">#666666</color>
+    <color name="trade_info_url_color">#159BFF</color>
+    <color name="return_msg_address_text">#8A8A8A</color>
+    <color name="return_msg_agree_btn_text">#1199ff</color>
+
+    <color name="search_btn_text_color">#0077E5</color>
+
+    <color name="address_detail_text_color">#B3B3B3</color>
+    <color name="FF7AD2D2">#FF7AD2D2</color>
+
+    <color name="text1">#1199FF</color>
+    <color name="text2">#333333</color>
+    <color name="background">#ffffff</color>
+
+    <color name="search_tab_text_selected_color">#333333</color>
+    <color name="search_tab_text_unselected_color">#C1C1C1</color>
+</resources>

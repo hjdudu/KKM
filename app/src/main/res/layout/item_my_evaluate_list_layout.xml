@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/work_order_list_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.kekemei.kekemei.view.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/px_195"
+            android:layout_height="@dimen/px_177"
+            android:layout_marginLeft="@dimen/px_36"
+            android:layout_marginTop="@dimen/px_40"
+            android:src="@mipmap/user_icon_default" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_81"
+            android:layout_marginTop="@dimen/px_58"
+            android:layout_toRightOf="@id/icon"
+            android:text="【爆款】肩颈+腰部+背部+足底+全身放松..."
+            android:textColor="@color/black"
+            android:textSize="@dimen/px_37" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="@dimen/px_81"
+            android:layout_marginTop="@dimen/px_86"
+            android:layout_toRightOf="@id/icon"
+            android:text="超出预期"
+            android:textColor="@color/c_ccc"
+            android:textSize="@dimen/px_40" />
+
+        <TextView
+            android:layout_width="@dimen/px_216"
+            android:layout_height="@dimen/px_72"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_40"
+            android:layout_marginTop="@dimen/px_143"
+            android:background="@drawable/shape_blue_evaluate_item_for_order_detail"
+            android:gravity="center"
+            android:text="订单详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_40" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commentContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_36"
+        android:layout_marginTop="@dimen/px_70"
+        android:text="整体来说还是不错的"
+        android:textColor="@color/common_text_dark"
+        android:textSize="@dimen/px_40" />
+
+    <com.kekemei.kekemei.view.NoScrollGridView
+        android:id="@+id/ncgv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_168"
+        android:layout_marginLeft="@dimen/px_36"
+        android:layout_marginRight="@dimen/px_36"
+        android:layout_marginTop="@dimen/px_22"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_40">
+
+        <com.kekemei.kekemei.view.StarBar
+            android:id="@+id/star_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_36"
+            ratingbar:changeEnable="false"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="10dp"
+            ratingbar:starEmpty="@mipmap/beautician_score_empty_ic"
+            ratingbar:starFill="@mipmap/beautician_score_full_ic"
+            ratingbar:starSize="@dimen/px_42" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_40"
+            android:text="2018-5-18"
+            android:textColor="@color/c_ccc"
+            android:textSize="@dimen/px_40" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/replyContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_70"
+        android:layout_marginLeft="@dimen/px_36"
+        android:layout_marginRight="@dimen/px_36"
+        android:layout_marginTop="@dimen/px_35"
+        android:background="#ECF9F9"
+        android:paddingBottom="@dimen/px_16"
+        android:paddingLeft="@dimen/px_12"
+        android:paddingRight="@dimen/px_12"
+        android:paddingTop="@dimen/px_12"
+        android:text="谢谢您，我们会继续努力的谢谢您，我们会继续努力的谢谢您，我们会继续努力的"
+        android:textColor="@color/common_text_dark"
+        android:textSize="@dimen/px_40" />
+
+    <View style="@style/CommonLine.Horizontal" />
+
+</LinearLayout>

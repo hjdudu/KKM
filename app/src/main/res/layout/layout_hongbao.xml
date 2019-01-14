@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_voucher_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_230"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/px_37"
+    android:layout_marginRight="@dimen/px_37"
+    android:layout_marginTop="@dimen/px_43"
+    android:background="@mipmap/orderform_youhuijuan_hongbao"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/px_88">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红包"
+                android:textColor="#fff"
+                android:textSize="@dimen/px_46" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_18"
+                android:text="仅在线上支付使用"
+                android:textColor="#fff"
+                android:textSize="@dimen/px_29" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_53"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/px_29"
+                android:text="¥"
+                android:textColor="#F9BC1A"
+                android:textSize="@dimen/px_58" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="500"
+                android:textColor="#F9BC1A"
+                android:textSize="40sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_now_use"
+            android:layout_width="@dimen/px_202"
+            android:layout_height="@dimen/px_58"
+            android:layout_marginRight="@dimen/px_73"
+            android:background="@drawable/btn_white_solid_background"
+            android:text="立即使用"
+            android:textColor="#FFFF6C70"
+            android:textSize="@dimen/px_29" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="有限期："
+            android:textColor="#fff"
+            android:textSize="@dimen/px_29" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2018.10.01 — 2019.10.01"
+            android:textColor="#fff"
+            android:textSize="@dimen/px_29" />
+    </LinearLayout>
+</LinearLayout>

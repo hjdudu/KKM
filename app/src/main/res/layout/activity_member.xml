@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F8F9"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/top_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_526"
+            android:background="@mipmap/user_head_bg" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_527"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/px_56"
+            android:paddingTop="@dimen/px_229">
+
+            <com.kekemei.kekemei.view.CircleImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/px_171"
+                android:layout_height="@dimen/px_171"
+                android:src="@mipmap/user_icon_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/px_63"
+                android:paddingTop="@dimen/px_20">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我不叫张三"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/px_49" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/px_30">
+
+                    <ImageView
+                        android:layout_width="@dimen/px_230"
+                        android:layout_height="@dimen/px_52"
+                        android:background="@mipmap/user_vip_ic" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/px_65"
+                        android:text="优享会员"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/px_36" />
+
+                    <TextView
+                        android:id="@+id/tv_daoqishijian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/px_48"
+                        android:text="2018-12-12会员到期"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/px_29" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_995"
+            android:layout_height="@dimen/px_518"
+            android:layout_marginLeft="@dimen/px_53"
+            android:layout_marginTop="@dimen/px_444"
+            android:background="@drawable/btn_gradient_background"
+            android:elevation="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/px_128">
+
+                    <TextView
+                        android:id="@+id/member_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥ 9999元"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/px_58" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="优享会员 1年"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/px_29" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_79"
+                    android:text="VIP"
+                    android:textColor="#7FFFFFFF"
+                    android:textSize="@dimen/px_138" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_30"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/px_79"
+                    android:layout_marginRight="@dimen/px_102"
+                    android:layout_weight="1"
+                    android:background="#FFFFFFFF" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/user_vip_ic_" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/px_102"
+                    android:layout_marginRight="@dimen/px_79"
+                    android:layout_weight="1"
+                    android:background="#FFFFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/px_42">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="会员专享价格"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/px_43" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="优惠劵红包"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/px_43" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_40"
+        android:layout_marginRight="@dimen/px_52"
+        android:layout_marginBottom="@dimen/px_89"
+        android:gravity="right|center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优享会员说明"
+            android:textColor="#ffc1c1c1"
+            android:textSize="@dimen/px_35" />
+
+        <ImageView
+            android:layout_width="@dimen/px_32"
+            android:layout_height="@dimen/px_32"
+            android:src="@mipmap/user_huiyuanka_shuoming_ic" />
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_pay_select" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_144"
+            android:layout_gravity="bottom"
+            android:background="#FF7AD2D2"
+            android:text="确定购买"
+            android:textColor="#FFFFF6EE"
+            android:textSize="@dimen/px_50" />
+    </LinearLayout>
+</LinearLayout>

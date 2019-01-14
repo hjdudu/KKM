@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/common_dialog_layout_bg">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="@dimen/px_48"
+        android:layout_height="@dimen/px_48"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/px_42"
+        android:layout_marginTop="@dimen/px_42"
+        android:src="@mipmap/user_info_dialog_close" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivClose"
+        android:divider="#E5E5E5"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent" />
+</RelativeLayout>

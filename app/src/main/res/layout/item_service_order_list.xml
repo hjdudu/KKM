@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_list_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/px_43"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_86"
+        android:background="#ECF9F9"
+        android:paddingLeft="@dimen/px_40"
+        android:paddingRight="@dimen/px_46">
+
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2018/08/31"
+            android:textColor="#999999"
+            android:textSize="@dimen/px_35" />
+
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="#FF6C70"
+            android:textSize="@dimen/px_35" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_40"
+        android:paddingRight="@dimen/px_46"
+        android:paddingTop="@dimen/px_46">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="曾雪峰"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_86"
+                android:layout_weight="1"
+                android:text="18765432567"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px_40" />
+
+            <ImageView
+                android:id="@+id/callPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/orderform_phone_btn" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_48"
+            android:layout_marginTop="@dimen/px_30"
+            android:text="北京西城区回龙观某某某某店铺预约地址店铺预"
+            android:textColor="@color/black"
+            android:textSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_40"
+        android:paddingRight="@dimen/px_46"
+        android:paddingTop="@dimen/px_46">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单编号"
+                android:textColor="#505050"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_49"
+                android:layout_weight="1"
+                android:text="DAS18373648493726"
+                android:textColor="#505050"
+                android:textSize="@dimen/px_40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_36"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务项目"
+                android:textColor="#505050"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/projectContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_49"
+                android:layout_weight="1"
+                android:text="肩颈+腰部+背部+足底+全身放松"
+                android:textColor="#505050"
+                android:textSize="@dimen/px_40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/px_36"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="预约时间"
+                android:textColor="#505050"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/appointmentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_49"
+                android:text="2018/12/12 12:30"
+                android:textColor="#505050"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/lookMoreTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_63"
+                android:layout_weight="1"
+                android:text="查看更多预约时间"
+                android:textColor="#C1C1C1"
+                android:textSize="@dimen/px_40"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/px_46"
+            android:layout_marginTop="@dimen/px_36"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单总价"
+                android:textColor="#505050"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/countNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_49"
+                android:text="X 2"
+                android:textColor="#505050"
+                android:textSize="@dimen/px_40" />
+
+            <TextView
+                android:id="@+id/orderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_40"
+                android:text="￥ 226"
+                android:textColor="#FF6C70"
+                android:textSize="@dimen/px_40" />
+
+        </LinearLayout>
+
+        <View style="@style/CommonLine.Horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_46"
+        android:paddingLeft="@dimen/px_46"
+        android:paddingRight="@dimen/px_46"
+        android:paddingTop="@dimen/px_46">
+
+        <Button
+            android:id="@+id/cancelOrder"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_btn_background"
+            android:text="取消订单"
+            android:textColor="#999"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/acceptOrder"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_red_btn_background"
+            android:text="接受订单"
+            android:textColor="#fff"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/startService"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_red_btn_background"
+            android:text="开始服务"
+            android:textColor="#fff"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/finishService"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_yellow_btn_background"
+            android:text="完成服务"
+            android:textColor="#fff"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/replayComment"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_yellow_btn_background"
+            android:text="回复评论"
+            android:textColor="#fff"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/orderDetail"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/px_374"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_blue_btn_background"
+            android:text="订单详情"
+            android:textColor="#fff"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

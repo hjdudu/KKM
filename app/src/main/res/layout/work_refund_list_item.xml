@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_order_list_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/px_43"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_115"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/order_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_37"
+            android:layout_weight="0"
+            android:text="2018/08/31"
+            android:textColor="#333333"
+            android:textSize="@dimen/px_37" />
+
+
+        <View
+            android:id="@+id/title_line"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/order_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/px_55"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="#999999"
+            android:textSize="@dimen/px_37" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="19dp"
+            android:layout_gravity="center"
+            android:textColor="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/iv_del_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px_43"
+            android:paddingRight="@dimen/px_50"
+            android:src="@mipmap/orderform_delete_btn" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/good_include"
+        layout="@layout/work_order_goods_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/work_order_goods_item_hight" />
+
+    <include
+        android:id="@+id/good_price_include"
+        layout="@layout/work_refund_price_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/work_refund_item_price_hight" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/work_refund_item_ll_margin_t"
+        android:background="#fff"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/work_refund_item_ll_padding_b"
+        android:paddingRight="@dimen/work_refund_item_btn_padding_r"
+        android:paddingBottom="@dimen/work_refund_item_ll_padding_b">
+
+        <Button
+            android:id="@+id/zaicigoumai"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_btn_background"
+            android:text="确认订单"
+            android:textColor="#999"
+            android:textSize="@dimen/work_refund_item_btn_text_size" />
+
+        <Button
+            android:id="@+id/qupingjia"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_btn_background"
+            android:text="立即评价"
+            android:textColor="#999"
+            android:textSize="@dimen/work_refund_item_btn_text_size" />
+
+        <Button
+            android:id="@+id/cuiwuliu"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_btn_background"
+            android:text="催物流"
+            android:textColor="#999"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/yuyue"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_yellow_btn_background"
+            android:text="立即预约"
+            android:textColor="#fff"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/quxiaodingdan"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_btn_background"
+            android:text="取消订单"
+            android:textColor="#999"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/chakan"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_btn_background"
+            android:text="查看"
+            android:textColor="#999"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/querenfuwu"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_red_btn_background"
+            android:text="确认服务"
+            android:textColor="#fff"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/lijifukuan"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="@dimen/work_refund_item_btn_width"
+            android:layout_height="@dimen/work_refund_item_btn_height"
+            android:layout_marginRight="@dimen/work_refund_item_btn_margin_r"
+            android:background="@drawable/refund_red_btn_background"
+            android:text="立即付款"
+            android:textColor="#fff"
+            android:textSize="@dimen/work_refund_item_btn_text_size"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

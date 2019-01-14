@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="search_tabs">
+        <item>全&#160;&#160;部</item>
+        <item>项&#160;&#160;目</item>
+        <item>店&#160;&#160;面</item>
+        <item>美容师</item>
+    </string-array>
+
+    <string-array name="shop_tabs">
+        <item>店铺首页</item>
+        <item>热门项目</item>
+        <item>客户评价</item>
+    </string-array>
+
+
+    <string-array name="find_tabs">
+        <item>美&#160;&#160;容</item>
+        <item>美&#160;&#160;体</item>
+        <item>养&#160;&#160;生</item>
+        <item>其&#160;&#160;他</item>
+    </string-array>
+</resources>

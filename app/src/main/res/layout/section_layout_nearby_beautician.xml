@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_43"
+        android:background="@color/common_background" />
+
+    <TextView
+        android:id="@+id/fujin_meirongshi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_160"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:drawableRight="@mipmap/title_more_btn"
+        android:paddingLeft="@dimen/px_30"
+        android:paddingRight="@dimen/px_27"
+        android:text="附近的美容师"
+        android:textColor="#5DBFB2"
+        android:textSize="@dimen/px_46" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_meirongshi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/px_59"
+        android:background="#fff" />
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="#F2F8F9">
+
+
+    <View
+        android:id="@+id/top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_789"
+        android:background="@mipmap/user_head_bg" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="登录"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="@dimen/px_58"
+            android:layout_height="@dimen/px_58"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/px_75"
+            android:background="@mipmap/fenxiang_btn_"
+            android:visibility="gone" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:layout_width="@dimen/px_230"
+        android:layout_height="@dimen/px_230"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_248"
+        android:scaleType="fitXY"
+        android:background="@mipmap/share_logo_pic" />
+
+    <LinearLayout
+        android:layout_width="@dimen/px_893"
+        android:layout_height="@dimen/px_670"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_541"
+        android:background="@drawable/btn_white_background"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/px_792"
+            android:layout_height="@dimen/px_115"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_85"
+            android:background="@drawable/btn_input_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_48"
+                android:text="+86 >"
+                android:textColor="#999999"
+                android:textSize="@dimen/px_40" />
+
+            <EditText
+                android:id="@+id/et_phone_num"
+                style="?android:attr/textViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/px_17"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="输入手机号"
+                android:textColor="#333333"
+                android:textColorHint="#999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/px_792"
+            android:layout_height="@dimen/px_115"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/px_82"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_yanzhengma"
+                    style="?android:attr/textViewStyle"
+                    android:layout_width="@dimen/px_370"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn_input_background"
+                    android:hint="输入验证码"
+                    android:paddingLeft="@dimen/px_48"
+                    android:textColor="#333333"
+                    android:textColorHint="#999999" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_yanzhengma"
+                    android:layout_width="@dimen/px_301"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center_horizontal"
+                    android:background="@drawable/btn_bule_solid_background"
+                    android:onClick="onClick"
+                    android:text="获取验证码"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/px_43" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/px_792"
+            android:layout_height="@dimen/px_115"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/px_69"
+            android:background="@drawable/btn_bule_solid_background"
+            android:onClick="onClick"
+            android:text="登录"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/px_43" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_245">
+
+        <View
+            android:layout_width="@dimen/px_56"
+            android:layout_height="1px"
+            android:background="#FF6A6D6C" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/px_58"
+            android:paddingRight="@dimen/px_58"
+            android:text="其它登录方式" />
+
+        <View
+            android:layout_width="@dimen/px_56"
+            android:layout_height="1px"
+            android:background="#FF6A6D6C" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_86">
+
+        <ImageView
+            android:id="@+id/weixin_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_101"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@mipmap/umeng_socialize_wechat" />
+
+        <ImageView
+            android:id="@+id/qq_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_101"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@mipmap/umeng_socialize_qq" />
+
+        <ImageView
+            android:id="@+id/weibo_login"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_101"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:src="@mipmap/umeng_socialize_sina" />
+    </LinearLayout>
+</RelativeLayout>

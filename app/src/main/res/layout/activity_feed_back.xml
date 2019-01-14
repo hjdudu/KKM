@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_622"
+        android:layout_marginLeft="@dimen/px_37"
+        android:layout_marginRight="@dimen/px_37"
+        android:layout_marginTop="@dimen/px_27"
+        android:background="@drawable/shape_border_radius_feed_back"
+        android:gravity="top"
+        android:hint="请输入你想反馈的内容"
+        android:maxLength="500"
+        android:paddingBottom="30dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="14dp"
+        android:textColor="#B3B3B3"
+        android:textSize="@dimen/px_40" />
+
+    <TextView
+        android:id="@+id/txtContactService"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_122"
+        android:layout_marginBottom="@dimen/help_center_page_custom_service_bottom_margin"
+        android:layout_marginLeft="@dimen/px_37"
+        android:layout_marginRight="@dimen/px_37"
+        android:layout_marginTop="@dimen/px_137"
+        android:background="@drawable/shape_border_radius"
+        android:gravity="center"
+        android:text="提      交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/px_50" />
+</LinearLayout>

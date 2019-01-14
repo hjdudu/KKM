@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/px_37">
+        <!-- 收货人 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="收货人"
+                android:textColor="@color/common_text_dark" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/my_address_detail_item_name"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/common_text_dark"
+                android:textColorHint="@color/address_detail_text_color"
+                android:textSize="@dimen/px_40" />
+        </LinearLayout>
+
+        <View style="@style/CommonLine.Horizontal" />
+        <!-- 手机号码 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/common_text_dark" />
+
+            <EditText
+                android:id="@+id/editPhoneNum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="@string/my_address_detail_item_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="15dp"
+                android:textColor="@color/common_text_dark"
+                android:textColorHint="@color/address_detail_text_color"
+                android:textSize="@dimen/px_40" />
+
+
+        </LinearLayout>
+
+        <View style="@style/CommonLine.Horizontal" />
+        <!-- 所在地 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="省市区县"
+                android:textColor="@color/common_text_dark" />
+
+            <TextView
+                android:id="@+id/txtLocSelector"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/my_address_detail_item_address"
+                android:paddingLeft="15dp"
+                android:singleLine="true"
+                android:textColor="@color/common_text_dark"
+                android:textColorHint="@color/address_detail_text_color"
+                android:textSize="@dimen/px_40" />
+
+        </LinearLayout>
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="详细地址"
+                android:textColor="@color/common_text_dark" />
+
+            <EditText
+                android:id="@+id/editAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/my_address_detail_item_address_detail_hint"
+                android:minHeight="50dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/common_text_dark"
+                android:textColorHint="@color/address_detail_text_color"
+                android:textSize="@dimen/px_40" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/my_address_detail_item_set_to_default"
+                android:textColor="@color/common_text_dark" />
+
+            <CheckBox
+                android:id="@+id/select_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e6e8">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_title_bar" />
+
+        <include layout="@layout/layout_shop_" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/px_37"
+            android:layout_marginTop="@dimen/px_49"
+            android:background="#FFCCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/ll_meirongshi_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_37"
+            android:layout_marginTop="@dimen/px_45"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_meirongshi_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.kekemei.kekemei.view.CircleImageView
+                    android:id="@+id/civ_icon"
+                    android:layout_width="@dimen/px_173"
+                    android:layout_height="@dimen/px_173"
+                    android:background="@mipmap/icon" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/px_76"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="艾蜜儿"
+                        android:textColor="#FF333333" />
+
+                    <com.kekemei.kekemei.view.StarBar
+                        android:id="@+id/sb_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_40"
+                        ratingbar:changeEnable="false"
+                        ratingbar:starCount="5"
+                        ratingbar:starDistance="4dp"
+                        ratingbar:starEmpty="@mipmap/beautician_score_empty_ic"
+                        ratingbar:starFill="@mipmap/beautician_score_full_ic"
+                        ratingbar:starSize="@dimen/px_40" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_58"
+                    android:text="联系美容师"
+                    android:textColor="#FFA3A3A3"
+                    android:textSize="@dimen/px_37" />
+
+                <ImageView
+                    android:layout_width="@dimen/px_46"
+                    android:layout_height="@dimen/px_40"
+                    android:layout_marginRight="@dimen/px_53"
+                    android:src="@mipmap/orderform_phone_btn" />
+
+                <ImageView
+                    android:layout_width="@dimen/px_29"
+                    android:layout_height="@dimen/px_49"
+                    android:layout_marginLeft="@dimen/px_69"
+                    android:layout_marginRight="@dimen/px_50"
+                    android:src="@mipmap/my_arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_meirongshi_info_hint"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_173"
+                android:gravity="right|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/px_58"
+                    android:text="请选择美容师"
+                    android:textColor="#FF000000"
+                    android:textSize="@dimen/px_37" />
+
+                <ImageView
+                    android:layout_width="@dimen/px_29"
+                    android:layout_height="@dimen/px_49"
+                    android:layout_marginLeft="@dimen/px_69"
+                    android:layout_marginRight="@dimen/px_50"
+                    android:src="@mipmap/my_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/px_37"
+            android:layout_marginTop="@dimen/px_48"
+            android:background="#FFCCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/ll_shop_place"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_184"
+            android:layout_marginLeft="@dimen/px_37"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="店铺地址"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/px_37" />
+
+            <TextView
+                android:id="@+id/tv_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="西城区西直门直营店朝阳大街302号"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/px_37" />
+
+            <ImageView
+                android:layout_width="@dimen/px_29"
+                android:layout_height="@dimen/px_49"
+                android:layout_marginLeft="@dimen/px_69"
+                android:layout_marginRight="@dimen/px_50"
+                android:src="@mipmap/my_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/px_37"
+            android:background="#FFCCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/ll_service_time"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_184"
+            android:layout_marginLeft="@dimen/px_37"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="服务时间"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/px_37" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2018/9/06   12:00"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/px_37" />
+
+            <ImageView
+                android:layout_width="@dimen/px_29"
+                android:layout_height="@dimen/px_49"
+                android:layout_marginLeft="@dimen/px_69"
+                android:layout_marginRight="@dimen/px_50"
+                android:src="@mipmap/my_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_yuyue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_114"
+        android:layout_alignParentBottom="true"
+        android:background="#FF7AD2D2"
+        android:text="预约"
+        android:textColor="#FFFFF6EE"
+        android:textSize="@dimen/px_50"
+        android:visibility="visible" />
+
+    <include layout="@layout/section_detail_select_time_layout" />
+</RelativeLayout>

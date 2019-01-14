@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e5e6e8">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/layout_title_bar" />
+
+    <ScrollView
+        android:id="@+id/scrollLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_jieshao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="164dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_288"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/px_195"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/jiedan_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="111"
+                            android:textColor="#FF333333"
+                            android:textSize="@dimen/px_40" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="接单数"
+                            android:textColor="#FF333333"
+                            android:textSize="@dimen/px_40" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/px_156"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/px_20"
+                        android:background="#ffe5e5e5" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/px_195"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="111"
+                            android:textColor="#FF333333"
+                            android:textSize="@dimen/px_40" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="均价"
+                            android:textColor="#FF333333"
+                            android:textSize="@dimen/px_40" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_43"
+                    android:background="#FFFFFFFF"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_36"
+                            android:layout_marginTop="@dimen/px_56"
+                            android:text="籍贯"
+                            android:textColor="#FF333333"
+                            android:textSize="@dimen/px_39" />
+
+                        <TextView
+                            android:id="@+id/jiguan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_45"
+                            android:layout_marginTop="@dimen/px_56"
+                            android:text="黑龙江 黑河"
+                            android:textColor="#FF505050"
+                            android:textSize="@dimen/px_39" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_36"
+                            android:layout_marginTop="@dimen/px_58"
+                            android:text="特长"
+                            android:textColor="#FF333333"
+                            android:textSize="@dimen/px_39" />
+
+                        <TextView
+                            android:id="@+id/techang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_45"
+                            android:layout_marginTop="@dimen/px_58"
+                            android:text="推拿  按摩   美甲"
+                            android:textColor="#FF505050"
+                            android:textSize="@dimen/px_39" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/px_46"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_36"
+                            android:layout_marginTop="@dimen/px_58"
+                            android:text="简介"
+                            android:textColor="#FF333333"
+                            android:textSize="@dimen/px_39" />
+
+                        <TextView
+                            android:id="@+id/jianjie"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/px_45"
+                            android:layout_marginTop="@dimen/px_58"
+                            android:text="通过专业的、科学的、系统的养生调理手段（包括传统中医、现代西医、天然医学、身心医学及社会医学等），达到激发人体自身内在的潜能，唤醒生命密码，产生生理、心理的平衡和谐，达到预防疾病、增强体质、颐养生命和美容驻颜功效，促进身心健康的一种综合的养生保健美容的系统方法。会越来越受到广大注重健康美容人士的青睐。很多人都习惯利用冬虫夏草来养生调理，它是一种传统的滋补中药，其最重要的成分是虫草素。服用虫草素能增补人体衰减的气血，恢复人体本身的新陈代谢能力，改善皮肤色斑，让皮肤重新焕发青春的光芒。"
+                            android:textColor="#FF505050"
+                            android:textSize="@dimen/px_39" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_43"
+                    android:background="#ffffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/px_36"
+                        android:layout_marginTop="@dimen/px_55"
+                        android:text="工作照片"
+                        android:textColor="#FF7AD2D2"
+                        android:textSize="@dimen/px_39" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/workPhotoList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/px_36"
+                        android:paddingBottom="@dimen/px_58"
+                        android:paddingTop="@dimen/px_58"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/section_beautician_detail_top_head_layout" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <com.kekemei.kekemei.view.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

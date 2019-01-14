@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_empty_retry_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_nodata"-->
+        <!--android:layout_width="@dimen/fail_image"-->
+        <!--android:layout_height="@dimen/fail_image"-->
+        <!--android:layout_marginBottom="@dimen/fail_image_marginBottom"-->
+        <!--android:layout_marginTop="@dimen/fail_image_marginTop"-->
+        <!--android:src="@mipmap/no_data" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/common_empty_view_tv"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="暂无数据"-->
+        <!--android:textColor="#999999"-->
+        <!--android:textSize="@dimen/no_data_textSize" />-->
+    <ImageView
+        android:id="@+id/iv_nodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/fail_image_marginBottom"
+        android:layout_marginTop="@dimen/fail_image_marginTop"
+        android:src="@mipmap/default_dingdan" />
+</LinearLayout>

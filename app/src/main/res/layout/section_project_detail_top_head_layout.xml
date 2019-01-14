@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/shop_detail_icon"
+        android:layout_width="match_parent"
+        android:layout_height="392dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/px_35"
+        android:paddingRight="@dimen/px_35"
+        android:paddingTop="@dimen/px_29"
+        android:text="【爆款】肩颈+腰部+背部+足底+全身放松肩颈+腰部+背部+足底+全身放松"
+        android:textColor="#000000"
+        android:textSize="@dimen/px_46" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_35"
+        android:paddingRight="@dimen/px_35"
+        android:paddingTop="@dimen/px_22">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥288"
+            android:textColor="#FF6C70"
+            android:textSize="@dimen/px_69" />
+
+        <TextView
+            android:id="@+id/marketPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_29"
+            android:layout_weight="1"
+            android:text="￥288"
+            android:textColor="#8D8D8D"
+            android:textSize="@dimen/px_32" />
+
+        <TextView
+            android:id="@+id/tvCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/beautician_detail_satisfaction_ic_1"
+            android:drawablePadding="@dimen/px_29"
+            android:text="收藏"
+            android:textColor="#666666"
+            android:textSize="@dimen/px_32" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_13"
+        android:paddingLeft="@dimen/px_35"
+        android:paddingRight="@dimen/px_35"
+        android:paddingTop="@dimen/px_30">
+
+        <ImageView
+            android:id="@+id/ivRedBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/beautician_envelopes_ic" />
+
+        <TextView
+            android:id="@+id/tvRedBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_14"
+            android:layout_marginRight="@dimen/px_22"
+            android:background="@drawable/btn_blue_background"
+            android:paddingBottom="1dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingTop="1dp"
+            android:text="领红包减"
+            android:textColor="#7AD2D2"
+            android:textSize="@dimen/px_29" />
+
+        <ImageView
+            android:id="@+id/ivFull"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_14"
+            android:src="@mipmap/beautician_reduce_ic" />
+
+        <TextView
+            android:id="@+id/tvFul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_14"
+            android:layout_marginRight="@dimen/px_22"
+            android:background="@drawable/btn_blue_background"
+            android:paddingBottom="@dimen/px_4"
+            android:paddingLeft="@dimen/px_7"
+            android:paddingRight="@dimen/px_7"
+            android:paddingTop="@dimen/px_4"
+            android:text="满200减50"
+            android:textColor="#7AD2D2"
+            android:textSize="@dimen/px_29" />
+
+        <TextView
+            android:id="@+id/tvFollowNum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/px_29"
+            android:gravity="right"
+            android:text="内容已有1300人关注"
+            android:textColor="#c1c1c1"
+            android:textSize="@dimen/px_35" />
+    </LinearLayout>
+
+</LinearLayout>
+

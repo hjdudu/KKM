@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+    <!-- 内部颜色 -->
+    <solid android:color="#ffffff" />
+
+    <!-- 圆角的幅度 -->
+    <corners android:radius="@dimen/px_58" />
+
+    <stroke
+        android:width="@dimen/px_6" android:color="#FF7AD2D2" />
+</shape>

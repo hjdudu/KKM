@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_sms_block_setting"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/rowIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxWidth="110dp"
+        android:singleLine="true"
+        android:text="Title"
+        android:textColor="@color/common_text_dark" />
+
+    <TextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:maxWidth="130dp"
+        android:singleLine="true"
+        android:text="subTitle"
+        android:textColor="@color/common_tx2"
+        android:textSize="@dimen/px_40" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:text="Content"
+        android:textColor="@color/common_tx3"
+        android:textSize="@dimen/px_40" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_43"
+        android:background="@color/common_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/title_more_btn"
+        android:paddingBottom="@dimen/px_28"
+        android:paddingLeft="@dimen/px_37"
+        android:paddingRight="@dimen/px_27"
+        android:paddingTop="@dimen/px_58"
+        android:text="热门项目"
+        android:textColor="#5DBFB2"
+        android:textSize="@dimen/px_52" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_hot_huodong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

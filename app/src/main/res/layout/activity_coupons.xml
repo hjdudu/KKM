@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_one_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/home_hongbao_lingqu_1_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/px_37">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的专属福利"
+                    android:textColor="#FFFF6C70"
+                    android:textSize="@dimen/px_40" />
+
+                <TextView
+                    android:id="@+id/tv_one_xinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/px_17"
+                    android:text="首次登录可领取新人体验卡"
+                    android:textColor="#FF999999"
+                    android:textSize="@dimen/px_32" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/px_380"
+                    android:layout_height="@dimen/px_86"
+                    android:layout_marginTop="@dimen/px_6"
+                    android:background="@mipmap/home_hongbao_youhuijuan_leixing_bg">
+
+                    <TextView
+                        android:id="@+id/tv_one_name"
+                        android:layout_width="@dimen/px_137"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="￥288"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/px_43" />
+
+                    <TextView
+                        android:id="@+id/tv_one_neirong"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="满9000减"
+                        android:textColor="#FF333333"
+                        android:textSize="@dimen/px_29" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/px_73"
+                android:src="@mipmap/home_hongbao_lingqu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_tow_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/home_hongbao_lingqu_2_bg"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/px_37">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的专属福利"
+                    android:textColor="#FFFF6C70"
+                    android:textSize="@dimen/px_40" />
+
+                <TextView
+                    android:id="@+id/tv_tow_xinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首次登录可领取新人体验卡"
+                    android:textColor="#FF999999"
+                    android:textSize="@dimen/px_32" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/px_380"
+                    android:layout_height="@dimen/px_86"
+                    android:layout_marginTop="@dimen/px_6"
+                    android:background="@mipmap/home_hongbao_youhuijuan_leixing_bg">
+
+                    <TextView
+                        android:id="@+id/tv_name_one_2"
+                        android:layout_width="@dimen/px_137"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="￥288"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/px_43" />
+
+                    <TextView
+                        android:id="@+id/tv_neirong_one_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="满9000减"
+                        android:textColor="#FF333333"
+                        android:textSize="@dimen/px_29" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px_380"
+                    android:layout_height="@dimen/px_86"
+                    android:layout_marginTop="@dimen/px_6"
+                    android:background="@mipmap/home_hongbao_youhuijuan_leixing_bg">
+
+                    <TextView
+                        android:id="@+id/tv_name_tow_2"
+                        android:layout_width="@dimen/px_137"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="￥288"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/px_43" />
+
+                    <TextView
+                        android:id="@+id/tv_neirong_tow_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="满9000减"
+                        android:textColor="#FF333333"
+                        android:textSize="@dimen/px_29" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/px_73"
+                android:src="@mipmap/home_hongbao_lingqu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_thr_red"
+            android:layout_width="@dimen/px_533"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/home_hongbao_lingqu_3_bg"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/px_37">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的专属福利"
+                    android:textColor="#FFFF6C70"
+                    android:textSize="@dimen/px_40" />
+
+                <TextView
+                    android:id="@+id/tv_thr_xinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首次登录可领取新人体验卡"
+                    android:textColor="#FF999999"
+                    android:textSize="@dimen/px_32" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/px_380"
+                    android:layout_height="@dimen/px_86"
+                    android:layout_marginTop="@dimen/px_6"
+                    android:background="@mipmap/home_hongbao_youhuijuan_leixing_bg">
+
+                    <TextView
+                        android:id="@+id/tv_name_one_3"
+                        android:layout_width="@dimen/px_137"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="￥288"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/px_43" />
+
+                    <TextView
+                        android:id="@+id/tv_neirong_one_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="满9000减"
+                        android:textColor="#FF333333"
+                        android:textSize="@dimen/px_29" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px_380"
+                    android:layout_height="@dimen/px_86"
+                    android:layout_marginTop="@dimen/px_6"
+                    android:background="@mipmap/home_hongbao_youhuijuan_leixing_bg">
+
+                    <TextView
+                        android:id="@+id/tv_name_tow_3"
+                        android:layout_width="@dimen/px_137"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="￥8"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/px_43" />
+
+                    <TextView
+                        android:id="@+id/tv_neirong_tow_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="红包"
+                        android:textColor="#FF333333"
+                        android:textSize="@dimen/px_29" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/px_380"
+                    android:layout_height="@dimen/px_86"
+                    android:layout_marginTop="@dimen/px_6"
+                    android:background="@mipmap/home_hongbao_youhuijuan_leixing_bg">
+
+                    <TextView
+                        android:id="@+id/tv_name_thr_3"
+                        android:layout_width="@dimen/px_137"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="￥500"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="@dimen/px_43" />
+
+                    <TextView
+                        android:id="@+id/tv_neirong_thr_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="优惠券"
+                        android:textColor="#FF333333"
+                        android:textSize="@dimen/px_29" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/iv_btn_lingqu"
+                android:layout_width="@dimen/px_451"
+                android:layout_height="@dimen/px_86"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="@dimen/px_73"
+                android:onClick="onClick"
+                android:background="@mipmap/home_hongbao_lingqu" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_669"
+            android:layout_marginTop="@dimen/px_144"
+            android:src="@mipmap/home_hongbao_huabian_bg" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_marginTop="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close_copy"/>
+    </RelativeLayout>
+</RelativeLayout>

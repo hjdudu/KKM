@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_pinglunbiaoqian"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="@dimen/px_906"
+        android:layout_height="@dimen/px_86"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/px_43"
+        android:layout_marginTop="@dimen/px_101"
+        android:background="#FF7AD2D2"
+        android:text="确定"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_30" />
+</LinearLayout>

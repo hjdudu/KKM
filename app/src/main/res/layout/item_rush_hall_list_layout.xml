@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_361"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/px_42"
+        android:paddingLeft="@dimen/px_45"
+        android:paddingRight="@dimen/px_48"
+        android:paddingTop="@dimen/px_50">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/px_317"
+            android:layout_height="@dimen/px_269"
+            android:src="@mipmap/beautician_photo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_13"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="【爆款】肩颈+腰部+背部+足底+全身放松"
+                android:textColor="@color/black"
+                android:textSize="@dimen/px_46" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="@dimen/px_91"
+                android:text="￥  266.00"
+                android:textColor="#FF6C70"
+                android:textSize="@dimen/px_37" />
+
+            <TextView
+                android:id="@+id/costPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="@dimen/px_22"
+                android:layout_marginTop="@dimen/px_101"
+                android:layout_toRightOf="@+id/price"
+                android:text="￥266.00"
+                android:textColor="#8D8D8D"
+                android:textSize="@dimen/px_23" />
+
+            <TextView
+                android:id="@+id/killBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/seckill_determine_btn"
+                android:gravity="center"
+                android:text="立即抢购"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/px_45"
+        android:background="@color/common_background" />
+
+</LinearLayout>

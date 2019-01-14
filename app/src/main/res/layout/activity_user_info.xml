@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/headIcon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_560"
+        android:background="@mipmap/user_head_bg" />
+
+    <com.kekemei.kekemei.view.CircleImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/px_240"
+        android:layout_height="@dimen/px_240"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/px_240"
+        android:src="@mipmap/user_icon_default" />
+
+    <include layout="@layout/layout_title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headIcon"
+        android:orientation="vertical">
+
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtNick"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:titleTxt="@string/user_info_nick"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtSex"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:titleTxt="@string/user_info_sex"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtBirth"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:titleTxt="@string/user_info_birth"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtSkin"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:titleTxt="@string/user_info_skin"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+        <com.kekemei.kekemei.view.SectionRowView
+            android:id="@+id/txtHobby"
+            style="@style/CommonSectionRowView"
+            app:contentTxtColor="@color/common_text_grey"
+            app:hideRightArrow="true"
+            app:titleTxt="@string/user_info_hobby"
+            app:titleTxtSize="@dimen/px_40" />
+
+        <View style="@style/CommonLine.Horizontal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

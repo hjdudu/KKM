@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_628"
+    android:background="@mipmap/wode_jifen_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/px_276"
+        android:layout_height="@dimen/px_376"
+        android:layout_marginLeft="@dimen/px_91"
+        android:background="@mipmap/group" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/px_140"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前积分"
+            android:textColor="#fff"
+            android:textSize="@dimen/px_35" />
+
+        <TextView
+            android:id="@+id/tv_jifennum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2409.00"
+            android:textColor="#fff"
+            android:textSize="@dimen/px_86" />
+    </LinearLayout>
+</LinearLayout>

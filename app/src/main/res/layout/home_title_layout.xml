@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#97222222"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/px_20">
+
+    <LinearLayout
+        android:id="@+id/ll_place"
+        android:layout_width="@dimen/px_251"
+        android:layout_height="@dimen/px_86"
+        android:layout_marginLeft="@dimen/px_37"
+        android:layout_marginRight="@dimen/px_22"
+        android:background="@drawable/btn_transparent_background"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_place"
+            android:layout_width="@dimen/px_43"
+            android:layout_height="@dimen/px_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px_24"
+            android:background="@mipmap/location" />
+
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_place"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/px_30"
+            android:text="北京"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_40" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/px_86"
+        android:layout_weight="1"
+        android:background="@drawable/btn_transparent_background"
+        android:gravity="center">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/search_btn" />
+
+        <TextView
+            android:id="@+id/text_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_23"
+            android:text="全场买一送一"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/px_40" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_msg"
+        android:layout_width="@dimen/px_107"
+        android:layout_height="@dimen/px_86"
+        android:layout_marginLeft="@dimen/px_23"
+        android:layout_marginRight="@dimen/px_37"
+        android:background="@drawable/btn_transparent_background"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_icon_message_normal" />
+    </LinearLayout>
+</LinearLayout>

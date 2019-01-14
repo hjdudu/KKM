@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/px_43"
+    android:paddingLeft="@dimen/px_27"
+    android:paddingTop="@dimen/px_43">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="美容"
+        android:textColor="#505050"
+        android:textSize="@dimen/px_40" />
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/px_60"
+        android:src="@mipmap/user_info_change_list_selected"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,1 @@
+include ':app', ':mainnavigatetabbar', ':image_loader_module', ':easeui'

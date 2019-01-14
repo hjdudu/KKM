@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E6E8"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title_bar" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_173"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/tal_all"
+                android:layout_width="@dimen/px_216"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px_24">
+
+                <TextView
+                    android:id="@+id/tv_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="全   部"
+                    android:textColor="@drawable/selector_comment_find_tab"
+                    android:textSize="@dimen/px_45" />
+
+                <View
+                    android:id="@+id/v_all"
+                    android:layout_width="@dimen/px_141"
+                    android:layout_height="@dimen/px_16"
+                    android:background="#FF7AD2D2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tal_wait_yuyue"
+                android:layout_width="@dimen/px_216"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px_24">
+
+                <TextView
+                    android:id="@+id/tv_wait_yuyue"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="待预约"
+                    android:textColor="@drawable/selector_comment_find_tab"
+                    android:textSize="@dimen/px_45" />
+
+                <View
+                    android:id="@+id/v_wait_yuyue"
+                    android:layout_width="@dimen/px_141"
+                    android:layout_height="@dimen/px_16"
+                    android:background="#FF7AD2D2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tal_wait_server"
+                android:layout_width="@dimen/px_216"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px_24">
+
+                <TextView
+                    android:id="@+id/tv_wait_server"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="待服务"
+                    android:textColor="@drawable/selector_comment_find_tab"
+                    android:textSize="@dimen/px_45" />
+
+                <View
+                    android:id="@+id/v_wait_server"
+                    android:layout_width="@dimen/px_141"
+                    android:layout_height="@dimen/px_16"
+                    android:background="#FF7AD2D2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tal_serving"
+                android:layout_width="@dimen/px_216"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px_24">
+
+                <TextView
+                    android:id="@+id/tv_serving"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="服务中"
+                    android:textColor="@drawable/selector_comment_find_tab"
+                    android:textSize="@dimen/px_45" />
+
+                <View
+                    android:id="@+id/v_serving"
+                    android:layout_width="@dimen/px_141"
+                    android:layout_height="@dimen/px_16"
+                    android:background="#FF7AD2D2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tal_served"
+                android:layout_width="@dimen/px_216"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px_24">
+
+                <TextView
+                    android:id="@+id/tv_served"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="服务完成"
+                    android:textColor="@drawable/selector_comment_find_tab"
+                    android:textSize="@dimen/px_45" />
+
+                <View
+                    android:id="@+id/v_served"
+                    android:layout_width="@dimen/px_141"
+                    android:layout_height="@dimen/px_16"
+                    android:background="#FF7AD2D2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tal_pingjia"
+                android:layout_width="@dimen/px_216"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px_24">
+
+                <TextView
+                    android:id="@+id/tv_pingjia"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="待回复"
+                    android:textColor="@drawable/selector_comment_find_tab"
+                    android:textSize="@dimen/px_45" />
+
+                <View
+                    android:id="@+id/v_pingjia"
+                    android:layout_width="@dimen/px_141"
+                    android:layout_height="@dimen/px_16"
+                    android:background="#FF7AD2D2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tal_finish"
+                android:layout_width="@dimen/px_216"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px_24">
+
+                <TextView
+                    android:id="@+id/tv_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="完   成"
+                    android:textColor="@drawable/selector_comment_find_tab"
+                    android:textSize="@dimen/px_45" />
+
+                <View
+                    android:id="@+id/v_finish"
+                    android:layout_width="@dimen/px_141"
+                    android:layout_height="@dimen/px_16"
+                    android:background="#FF7AD2D2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tal_quit"
+                android:layout_width="@dimen/px_216"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/px_24">
+
+                <TextView
+                    android:id="@+id/tv_quit"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="已取消"
+                    android:textColor="@drawable/selector_comment_find_tab"
+                    android:textSize="@dimen/px_45" />
+
+                <View
+                    android:id="@+id/v_quit"
+                    android:layout_width="@dimen/px_141"
+                    android:layout_height="@dimen/px_16"
+                    android:background="#FF7AD2D2"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/swipe_rfresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.kekemei.kekemei.view.MultipleStatusView
+            android:id="@+id/multiple_status_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_select_time"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/px_488"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_144"
+        android:layout_marginTop="@dimen/px_127"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerview_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/px_144"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="#FFECF9F9"
+            android:scrollbars="none"/>
+
+        <LinearLayout
+            android:id="@+id/show_select_time"
+            android:layout_width="@dimen/px_230"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_60"
+                android:layout_height="@dimen/px_60"
+                android:src="@mipmap/beautician_detail_date_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_20"
+                android:text="选择日期"
+                android:textColor="#FF7AD2D2"
+                android:textSize="@dimen/px_27" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list_yuyue"
+        android:layout_width="@dimen/px_1024"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/px_46"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/queding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_144"
+        android:layout_gravity="center"
+        android:background="#FF7AD2D2"
+        android:text="确定"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_43" />
+</LinearLayout>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_no_network_retry_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/no_net"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/no_net_height"
+        android:background="#FFFBE6"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/no_net_image"
+            android:layout_height="@dimen/no_net_image"
+            android:layout_marginLeft="@dimen/no_net_image_margin_left"
+            android:layout_marginRight="@dimen/no_net_image_margin_right"
+            android:src="@mipmap/no_net_hint" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="网络请求失败，请检查您的网络设置" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/no_net_image_margin_left"
+            android:src="@mipmap/no_net_arrow" />
+
+    </LinearLayout>
+</RelativeLayout>

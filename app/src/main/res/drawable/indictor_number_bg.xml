@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 内部颜色 -->
+    <solid android:color="#f02b2b" />
+
+    <!-- 圆角的幅度 -->
+    <corners android:radius="@dimen/indictor_number_bg_radius" />
+</shape>

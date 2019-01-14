@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/px_53">
+
+    <ImageView
+        android:id="@+id/order_status_icon"
+        android:layout_width="@dimen/px_104"
+        android:layout_height="@dimen/px_86"
+        android:src="@mipmap/user_dingdan_btn" />
+
+    <TextView
+        android:id="@+id/order_status_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_26"
+        android:gravity="center"
+        android:text="订单"
+        android:textSize="@dimen/px_33" />
+</LinearLayout>

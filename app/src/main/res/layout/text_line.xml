@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/tv_text"
+        android:layout_width="@dimen/px_121"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_45"
+        android:text="养  生"
+        android:textColor="@drawable/selector_comment_find_tab"
+        android:background="#fff"
+        android:textIsSelectable="true"/>
+
+    <View
+        android:layout_marginTop="@dimen/px_24"
+        android:id="@+id/v_line"
+        android:background="@drawable/selector_comment_home_tab_all"
+        android:layout_width="@dimen/px_121"
+        android:layout_height="@dimen/px_16" />
+</LinearLayout>

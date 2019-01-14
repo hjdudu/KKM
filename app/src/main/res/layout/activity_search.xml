@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_search_tool_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/px_50"
+        android:paddingRight="@dimen/px_50">
+
+        <RelativeLayout
+            android:id="@+id/tabAll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tabAllText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="全    部"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/indicatorTabAll"
+                android:layout_width="46dp"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#7AD2D2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabProject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tabProjectText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="项    目"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/indicatorProject"
+                android:layout_width="46dp"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#7AD2D2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabShopName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tabShopNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="店    名"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/indicatorShopName"
+                android:layout_width="46dp"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#7AD2D2"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabBeautician"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tabBeauticianText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="美容师"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/indicatorBeautician"
+                android:layout_width="46dp"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="#7AD2D2"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_section_search_all"/>
+
+    <include layout="@layout/layout_section_search_result_list"/>
+
+</LinearLayout>

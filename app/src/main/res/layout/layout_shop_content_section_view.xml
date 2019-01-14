@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_43"
+        android:background="@color/common_background" />
+
+    <TextView
+        android:id="@+id/tvHotProject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@mipmap/title_more_btn"
+        android:paddingBottom="@dimen/px_26"
+        android:paddingLeft="@dimen/px_33"
+        android:paddingRight="@dimen/px_43"
+        android:paddingTop="@dimen/px_58"
+        android:text="热门项目"
+        android:textColor="#7AD2D2"
+        android:textSize="@dimen/px_52" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/sectionRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lookMore"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_115"
+        android:background="#ECF9F9"
+        android:gravity="center"
+        android:text="查看更多"
+        android:textColor="#7AD2D2"
+        android:textSize="@dimen/px_43" />
+
+    <LinearLayout
+        android:id="@+id/newComerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_43"
+            android:background="@color/common_background" />
+
+        <TextView
+            android:id="@+id/tvNewComer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/title_more_btn"
+            android:paddingBottom="@dimen/px_26"
+            android:paddingLeft="@dimen/px_33"
+            android:paddingRight="@dimen/px_43"
+            android:paddingTop="@dimen/px_58"
+            android:text="新人秒杀"
+            android:textColor="#7AD2D2"
+            android:textSize="@dimen/px_52" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sectionNewRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lookMoreNew"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_115"
+            android:background="#ECF9F9"
+            android:gravity="center"
+            android:text="查看更多"
+            android:textColor="#7AD2D2"
+            android:textSize="@dimen/px_43" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/memberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_43"
+            android:background="@color/common_background" />
+
+        <TextView
+            android:id="@+id/tvMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/title_more_btn"
+            android:paddingBottom="@dimen/px_26"
+            android:paddingLeft="@dimen/px_33"
+            android:paddingRight="@dimen/px_43"
+            android:paddingTop="@dimen/px_58"
+            android:text="会员专区"
+            android:textColor="#7AD2D2"
+            android:textSize="@dimen/px_52" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sectionMemberRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lookMoreMember"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_115"
+            android:background="#ECF9F9"
+            android:gravity="center"
+            android:text="查看更多"
+            android:textColor="#7AD2D2"
+            android:textSize="@dimen/px_43" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/preferenceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_43"
+            android:background="@color/common_background" />
+
+        <TextView
+            android:id="@+id/tvPreference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/title_more_btn"
+            android:paddingBottom="@dimen/px_26"
+            android:paddingLeft="@dimen/px_33"
+            android:paddingRight="@dimen/px_43"
+            android:paddingTop="@dimen/px_58"
+            android:text="会员特惠"
+            android:textColor="#7AD2D2"
+            android:textSize="@dimen/px_52" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/sectionPreferenceRv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lookMorePreference"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_115"
+            android:background="#ECF9F9"
+            android:gravity="center"
+            android:text="查看更多"
+            android:textColor="#7AD2D2"
+            android:textSize="@dimen/px_43" />
+    </LinearLayout>
+</LinearLayout>

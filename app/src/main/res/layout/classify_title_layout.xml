@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_184"
+    android:background="#FF7AD2D2"
+    android:gravity="bottom"
+    android:paddingBottom="@dimen/px_20">
+
+    <LinearLayout
+        android:id="@+id/ll_fanhui"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/px_86"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/fanhui"
+            android:layout_width="@dimen/px_32"
+            android:layout_height="@dimen/px_50"
+            android:layout_marginLeft="@dimen/px_37"
+            android:background="@mipmap/back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_86"
+        android:layout_marginLeft="@dimen/px_144"
+        android:layout_marginRight="@dimen/px_46"
+        android:background="@drawable/btn_white_background2"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/search_btn" />
+
+        <TextView
+            android:id="@+id/text_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_23"
+            android:text="全场买一送一"
+            android:textColor="#FF999999"
+            android:textSize="@dimen/px_40" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/work_order_list_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.kekemei.kekemei.view.CircleImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/px_122"
+            android:layout_height="@dimen/px_122"
+            android:layout_marginLeft="@dimen/px_37"
+            android:layout_marginTop="24dp"
+            android:src="@mipmap/user_icon_default" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="29dp"
+            android:layout_toRightOf="@id/icon"
+            android:text="不露声色"
+            android:textColor="@color/common_text_dark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/icon"
+            android:text="不露声色"
+            android:textColor="@color/c_ccc"
+            android:textSize="@dimen/px_40" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commentContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="19dp"
+        android:text="整体来说还是不错的"
+        android:textColor="@color/common_text_dark"
+        android:textSize="@dimen/px_40" />
+
+    <com.kekemei.kekemei.view.NoScrollGridView
+        android:id="@+id/ncgv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px_168"
+        android:layout_marginLeft="@dimen/px_174"
+        android:layout_marginRight="@dimen/px_107"
+        android:layout_marginTop="@dimen/px_56"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/px_40">
+
+        <com.kekemei.kekemei.view.StarBar
+            android:id="@+id/star_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/px_174"
+            ratingbar:changeEnable="false"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="10dp"
+            ratingbar:starEmpty="@mipmap/beautician_score_empty_ic"
+            ratingbar:starFill="@mipmap/beautician_score_full_ic"
+            ratingbar:starSize="@dimen/px_42" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/px_121"
+            android:text="2018-5-18"
+            android:textColor="@color/c_ccc"
+            android:textSize="@dimen/px_40" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/replyContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_68"
+        android:layout_marginLeft="@dimen/px_174"
+        android:layout_marginRight="@dimen/px_37"
+        android:layout_marginTop="13dp"
+        android:background="#ECF9F9"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/px_16"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp" />
+
+    <View style="@style/CommonLine.Horizontal" />
+
+</LinearLayout>

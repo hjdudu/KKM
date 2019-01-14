@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_166"
+            android:layout_marginLeft="@dimen/px_37"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_98"
+                android:layout_height="@dimen/px_98"
+                android:background="@mipmap/orderform_weixin_ic" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_111"
+                android:layout_weight="1"
+                android:text="微信支付"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/px_37" />
+
+
+            <com.kekemei.kekemei.view.CheckBoxSample
+                android:id="@+id/iv_check_wechat"
+                android:layout_width="@dimen/px_66"
+                android:layout_height="@dimen/px_66"
+                android:layout_marginRight="@dimen/px_50"
+                app:color_background="#FFFFFFFF"
+                app:color_border="#FFC1C1C1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/px_37"
+            android:background="#FFCCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px_166"
+            android:layout_marginLeft="@dimen/px_37"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/px_98"
+                android:layout_height="@dimen/px_98"
+                android:background="@mipmap/orderform_zhifubao_ic" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/px_111"
+                android:layout_weight="1"
+                android:text="支付宝支付"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/px_37" />
+
+            <com.kekemei.kekemei.view.CheckBoxSample
+                android:id="@+id/iv_check_ali"
+                android:layout_width="@dimen/px_66"
+                android:layout_height="@dimen/px_66"
+                android:layout_marginRight="@dimen/px_50"
+                app:color_background="#FFFFFFFF"
+                app:color_border="#FFC1C1C1" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

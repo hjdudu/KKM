@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F8F9"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/top_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_526"
+                android:background="@mipmap/user_head_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/px_361"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/px_56"
+                android:paddingTop="@dimen/px_189">
+
+                <com.kekemei.kekemei.view.CircleImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/px_171"
+                    android:layout_height="@dimen/px_171"
+                    android:src="@mipmap/user_icon_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/px_63"
+                    android:paddingTop="@dimen/px_20">
+
+                    <TextView
+                        android:id="@+id/userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我不叫张三"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px_49" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/px_30">
+
+                        <ImageView
+                            android:layout_width="@dimen/px_230"
+                            android:layout_height="@dimen/px_52"
+                            android:background="@mipmap/user_vip_ic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/px_65"
+                            android:text="普通会员"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/px_36" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/px_969"
+                android:layout_height="@dimen/px_251"
+                android:layout_marginLeft="@dimen/px_53"
+                android:layout_marginTop="@dimen/px_392"
+                android:background="@drawable/btn_white_background"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tiyan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_tiyannum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/px_55" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="体验卡"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/px_40" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/daijinquan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_daijinnum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/px_55" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="代金券"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/px_40" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hongbao"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_hongbaonum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/px_55" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红包"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/px_40" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/px_971"
+                android:layout_height="@dimen/px_455"
+                android:layout_marginLeft="@dimen/px_53"
+                android:layout_marginTop="@dimen/px_680"
+                android:background="@drawable/btn_white_background"
+                android:orientation="horizontal">
+
+                <com.kekemei.kekemei.view.NoScrollGridView
+                    android:id="@+id/ncgv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="4"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_foryou"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/px_1168"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/px_160"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/px_30"
+                    android:paddingRight="@dimen/px_27"
+                    android:text="为您推荐"
+                    android:textColor="#5DBFB2"
+                    android:textSize="@dimen/px_46" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_tuijian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px_37"
+                android:layout_marginTop="@dimen/px_81"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/user_set_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/px_43"
+                    android:src="@mipmap/user_set_btn" />
+
+                <ImageView
+                    android:id="@+id/user_message_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/user_message_btn" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

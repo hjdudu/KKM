@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">大卫•克克美</string>
+
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="price_rmb_space_format">¥&#160;%1$s</string>
+
+    <string name="a_name">挑战者联盟</string>
+    <string name="b_name">老九门，再探古墓</string>
+    <string name="c_name">红色通道，刘烨归来</string>
+    <string name="d_name">神犬小七第二季</string>
+    <string name="e_name">灭罪师</string>
+
+    <string name="common_text">测试普通View轮播</string>
+    <string name="scroll_text">测试ScrollView轮播</string>
+
+    <!--设置中心-->
+    <string name="setting_page_safely_setting">安全设置</string>
+    <string name="setting_page_user_feed_back">用户反馈</string>
+    <string name="setting_page_help_center">帮助中心</string>
+    <string name="setting_page_about_us">关于克克美</string>
+    <string name="setting_page_clean_memory">清除缓存</string>
+    <string name="setting_page_version">版本</string>
+
+    <!--帮助中心-->
+    <string name="help_center_page_section_one">1、克克美做什么？</string>
+    <string name="help_center_page_section_two">2、账号找不到怎么办？</string>
+    <string name="help_center_page_section_three">3、密码忘记怎么办？</string>
+
+    <!-- 搜索相关 -->
+    <string name="search_loading">加载中&#8230;</string>
+    <string name="search_no_more">没有更多了</string>
+    <string name="search_title_bar_hint_text">输入搜索内容</string>
+    <string name="search_title_bar_btn_text">搜索</string>
+    <string name="search_suggest_page_search_history">历史记录</string>
+    <string name="search_suggest_page_search_hotword">热门搜索</string>
+
+    <!--个人资料-->
+    <string name="user_info_nick">昵称</string>
+    <string name="user_info_sex">性别</string>
+    <string name="user_info_birth">生日</string>
+    <string name="user_info_skin">肤质</string>
+    <string name="user_info_hobby">我的爱好</string>
+
+    <!--添加地址-->
+    <string name="my_address_detail_item_name">请输入收货人姓名</string>
+    <string name="my_address_detail_item_address">点击选择</string>
+    <string name="my_address_detail_item_address_detail_hint">请输入详细地址（5-120个字）</string>
+    <string name="my_address_detail_item_phone">请输入手机号</string>
+    <string name="my_address_detail_item_set_to_default">设置为默认地址</string>
+
+    <!--首页评价-->
+    <string name="home_comment_title_text">客户评价</string>
+    <string name="home_comment_num_format">(%1$d)</string>
+    <string name="home_comment_peer_format">高于%1$s的同行\n好评率%1$s</string>
+
+    <!--详情页-->
+    <string name="shop_detail_name_text">克克美-%1$s</string>
+    <string name="shop_detail_server_number">服务人数:&#160;&#160;%1$d</string>
+    <string name="shop_detail_fensi_number">粉丝数:&#160;&#160;%1$d</string>
+    <string name="shop_detail_satisfaction">%1$s满意度</string>
+    <string name="shop_detail_distance">离我%1$skm</string>
+
+</resources>

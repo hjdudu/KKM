@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/px_413"
+    android:layout_height="@dimen/px_395"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/px_27"
+    android:background="@drawable/btn_white_backgroundhas_stroke"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.kekemei.kekemei.view.CircleImageView
+        android:id="@+id/icon_pic"
+        android:layout_width="@dimen/px_124"
+        android:layout_height="@dimen/px_124"
+        android:paddingBottom="@dimen/px_19"
+        android:src="@mipmap/icon_pic" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/px_17"
+        android:text="埃米尔"
+        android:textColor="#333333"
+        android:textSize="@dimen/px_46" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:singleLine="true"
+        android:text="@string/setting_page_safely_setting"
+        android:textColor="#999999"
+        android:textSize="@dimen/px_46" />
+
+    <Button
+        android:id="@+id/btn_guanzhu"
+        android:layout_width="@dimen/px_156"
+        android:layout_height="@dimen/px_52"
+        android:layout_marginTop="@dimen/px_30"
+        android:background="#99999999"
+        android:text="关注"
+        android:textColor="#fff"
+        android:textSize="@dimen/px_26" />
+</LinearLayout>
